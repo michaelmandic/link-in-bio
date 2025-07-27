@@ -13,7 +13,64 @@ import "../styles/global.css";
 			href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
 			rel="stylesheet"
 		/>
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+
+		<!-- Default favicons (fallback) -->
+		<link rel="icon" type="image/x-icon" href="/favicon-light.ico" />
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="/favicon-light-32x32.png"
+		/>
+		<link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+
+		<!-- Light mode favicons -->
+		<link
+			rel="icon"
+			type="image/x-icon"
+			href="/favicon-light.ico"
+			media="(prefers-color-scheme: light)"
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="16x16"
+			href="/favicon-light-16x16.png"
+			media="(prefers-color-scheme: light)"
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="/favicon-light-32x32.png"
+			media="(prefers-color-scheme: light)"
+		/>
+
+		<!-- Dark mode favicons -->
+		<link
+			rel="icon"
+			type="image/x-icon"
+			href="/favicon-dark.ico"
+			media="(prefers-color-scheme: dark)"
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="16x16"
+			href="/favicon-dark-16x16.png"
+			media="(prefers-color-scheme: dark)"
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="/favicon-dark-32x32.png"
+			media="(prefers-color-scheme: dark)"
+		/>
+
+		<!-- SVG favicons with embedded CSS -->
+		<link rel="icon" type="image/svg+xml" href="/favicon-adaptive.svg" />
+
 		<meta name="generator" content={Astro.generator} />
 		<title>Mihajlo</title>
 	</head>
