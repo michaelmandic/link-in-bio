@@ -1,0 +1,19 @@
+---
+const { href, text } = Astro.props;
+---
+
+<a
+  href={href}
+  target="_blank"
+  class="font-normal hover:font-bold transition-all">{text}</a
+>
+
+<style>
+  a {
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-style: italic;
+    font-size: 4.5rem;
+    line-height: 5rem;
+  }
+</style>

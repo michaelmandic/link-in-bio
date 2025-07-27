@@ -1,9 +1,30 @@
 ---
 import Layout from "../layouts/Layout.astro";
+import SocialLink from "../components/SocialLink.astro";
+
+const currentYear = new Date().getFullYear();
 ---
 
 <Layout>
-	<div class="p-6">
-		<h1 class="">Mihajlo</h1>
-	</div>
+	<main class="p-6">
+		<h1 class="text-5xl opacity-70 mt-16 italic mb-2">Mihajlo</h1>
+		<div class="flex flex-col mb-6">
+			<SocialLink
+				text="Instagram"
+				href="https://www.instagram.com/miihaaajloooo/"
+			/>
+			<SocialLink text="Mastodon" href="https://mastodon.social/@mihajlom" />
+			<SocialLink
+				text="Bluesky"
+				href="https://bsky.app/profile/mmihajlo.bsky.social"
+			/>
+			<SocialLink
+				text="Snapchat"
+				href="https://www.snapchat.com/add/miihaaajloooo/"
+			/>
+		</div>
+		<small class="font-[Inter] text-xs opacity-70"
+			>© {currentYear} All rights reserved.</small
+		>
+	</main>
 </Layout>
